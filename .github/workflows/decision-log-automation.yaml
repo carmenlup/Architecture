@@ -10,7 +10,6 @@ jobs:
     steps:
       - name: Write decision to decision-log readmefile file
         run: |
-          // add status of adr to decision-log.md file
           echo "----------------------------------------" >> decision-log.md
           echo "Decision made in pull request review: ${{ github.event.review.body }}" >> decision-log.nd
           echo "Decision made by: ${{ github.event.review.user.login }}" >> decision-log.md
